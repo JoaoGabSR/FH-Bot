@@ -1,14 +1,16 @@
+import { DiscordModule } from './discord/discord.module';
 import { Module } from '@nestjs/common';
 import { PrismaModule } from './prisma/prisma.module';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
-    imports: [
+    imports: [ 
+        DiscordModule,
         ConfigModule.forRoot({
             envFilePath: '.env',
             isGlobal: true,
         }),
-        PrismaModule
+        PrismaModule,
     ],
 })
 export class AppModule {}
