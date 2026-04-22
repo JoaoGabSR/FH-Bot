@@ -10,6 +10,22 @@ A proposta inicial do bot é ajudar na organização de **comboios**, facilitand
 
 O foco da primeira versão do bot é permitir que administradores da comunidade criem convites para comboios, registrem respostas dos participantes e organizem automaticamente listas de presença para eventos futuros.
 
+## Atuais funcionalidades
+
+O comando `/rodar` serve para verificar se o bot está online. Ao usar, ele responde confirmando que está ativo.
+
+Exemplo:
+`/rodar`
+
+O comando `/comboio` cria um novo comboio com data, horário e local. O bot salva o evento, adiciona automaticamente o criador como confirmado e envia uma mensagem com botões para os outros membros responderem.
+
+Formato:
+`/comboio DD-MM HH:MM Local`
+
+Exemplo:
+`/comboio 25-12 20:30 Tóquio`
+
+
 ## Futuras funcionalidades
 
 Novas funcionalidades serão adicionadas conforme a ideia do projeto for amadurecendo e evoluindo junto com as necessidades da comunidade.

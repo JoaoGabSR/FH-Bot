@@ -144,9 +144,12 @@ export const convoyParticipantListHandler = async (
         }
     });
 
+    // Check if convoy exists
     if(convoy) {
+        // Check if convoy is closed and return a message to inform this status
         if(convoy.status === 'CLOSED') await interaction.reply({ content: 'Esse evento já passou mano!!! Fica mais ligado na próxima', ephemeral: true });
 
+        // If convoy is open return the list of participants confirmed
         if(convoy.status === 'OPEN') {
             const participants = await prisma.convoyParticipant.findMany({
                 where: {
