@@ -3,6 +3,6 @@ import { Module } from '@nestjs/common';
 
 @Module({
   providers: [ PrismaService,],
-  exports: []
+  exports: [PrismaService]
 })
 export class PrismaModule {}

@@ -1,10 +1,9 @@
+import { PrismaModule } from '../prisma/prisma.module';
 import { DiscordService } from './discord.service';
 import { Module } from '@nestjs/common';
 
 @Module({
-  imports: [],
-  controllers: [],
+  imports: [PrismaModule],
   providers: [ DiscordService,],
-  exports: []
 })
 export class DiscordModule {}

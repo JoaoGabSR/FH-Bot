@@ -2,7 +2,6 @@ import { Global, Injectable, OnModuleDestroy, OnModuleInit } from '@nestjs/commo
 import { PrismaBetterSqlite3 } from '@prisma/adapter-better-sqlite3';
 import { PrismaClient } from '@prisma/client';
 
-@Global()
 @Injectable()
 export class PrismaService extends PrismaClient implements OnModuleInit, OnModuleDestroy {
   constructor() {

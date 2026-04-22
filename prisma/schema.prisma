@@ -47,7 +47,6 @@ model Member {
 
 model Convoy {
   id               String               @id @default(cuid())
-  title            String?
   location         String
   eventDate        DateTime
   responseDeadline DateTime
