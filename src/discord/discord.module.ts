@@ -4,6 +4,6 @@ import { Module } from '@nestjs/common';
 
 @Module({
   imports: [PrismaModule],
-  providers: [ DiscordService,],
+  providers: [DiscordService],
 })
 export class DiscordModule {}
